@@ -84,15 +84,15 @@ header nav ul li .active i {
     color: #555;
 }
 
-.content h2 {
+.content h1 {
     font-size: 3em;
 }
 
-.content h2 span {
+.content h1 span {
     color: peru;
 }
 
-.content h4 {
+.content h2 {
     font-size: 2em;
 }
 
@@ -173,17 +173,12 @@ header .footer p a {
     color: #fff;
 }
 
-#MenuBtn {
-    position: fixed;
-    top: 20px;
-    left: 110px;
-    font-size: 17px;
-    width: 40px;
-    height: 40px;
-    color: white;
-    background-color: peru;
-    text-align: center;
-    line-height: 42px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+@media only screen and (max-width: 786px) {
+    header .nav .section .footer .h1 .h2 .p .a .logo .navigation .active .btn-group .content .social-icons {
+        left: -300px;
+        margin-left: 0;
+        letter-spacing: 0;
+        line-height: 50px;
+        font-size: 35px;
+    }
 }
