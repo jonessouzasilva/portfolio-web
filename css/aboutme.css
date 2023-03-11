@@ -141,3 +141,41 @@ main{
         }
     }
 }
+
+#skill {
+    padding: 70px 30px;
+}
+
+#skill .skill-row {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#skill .skill-row .skill-box .skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+#skill .skill-row .skill-box .skill-info h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#skill .skill-row .skill-box .skill-outter-line {
+    width: 100%;
+    height: 10px;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+#skill .skill-row .skill-box .skill-outter-line .skill-inner-line {
+    height: 10px;
+    background-color: aqua;
+    border-radius: 20px;
+}
