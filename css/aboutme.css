@@ -8,7 +8,7 @@
 }
 
 main{
-    margin: 50px;
+    margin: 5px;
     background-color: peru;
     transition: 0.3s;
 }
@@ -18,7 +18,7 @@ main{
 }
 
 .sub-heading {
-    color: #fff;
+    color: aqua;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -178,4 +178,13 @@ main{
     height: 10px;
     background-color: aqua;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    #skill {
+        padding: 50px 15px;
+    }
+}   #skill .skill-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
 }
