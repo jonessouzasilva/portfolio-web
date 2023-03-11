@@ -53,3 +53,18 @@
     font-size: 14px;
     font-weight: 500;
 }
+@media only screen and (max-width: 850px) {
+    #service {
+        padding: 50px 15px;
+    }
+    #service .service-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #service .service-row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
