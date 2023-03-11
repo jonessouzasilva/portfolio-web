@@ -8,10 +8,10 @@
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 10px;
     left: 10px;
-    width: 100%;
+    width: 80%;
     padding: 5px 5px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
     color: peru;
 }
 
-header nav ul li a {
+header nav ul a {
     display: cover;
     text-decoration: none;
     padding: 7px 10px;
@@ -39,17 +39,17 @@ header nav ul li a {
     letter-spacing: 0.6px;
 }
 
-header nav ul li a i {
+header nav ul a i {
     margin-right: 10px;
     font-size: 20px;
     transition: 0.4s;
 }
 
-header nav ul li a:hover i {
+header nav ul a:hover i {
     color: gray;
 }
 
-header nav ul li .active i {
+header nav ul .active i {
     color: gray;
 }
 
@@ -84,15 +84,15 @@ header nav ul li .active i {
     color: #555;
 }
 
-.content h1 {
+.content h2 {
     font-size: 3em;
 }
 
-.content h1 span {
+.content h2 span {
     color: peru;
 }
 
-.content h2 {
+.content h3 {
     font-size: 2em;
 }
 
@@ -155,30 +155,27 @@ header nav ul li .active i {
     color: #fff;
 }
 
-header .footer {
-    text-align: center;
+#about {
+    padding: 70px 30px;
+}
+
+.sub-heading {
+    color: #555;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
     background-color: #555;
-    width: 100%;
-    color: peru;
-    font-size: 14px;
-    letter-spacing: 0.6px;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transition: 0.4s;
+    border-radius: 3px;
 }
 
-header .footer p a {
-    color: #fff;
-}
-
-@media only screen and (max-width: 786px) {
-    header .nav .section .footer .h1 .h2 .p .a .logo .navigation .active .btn-group .content .social-icons {
-        left: -300px;
-        margin-left: 0;
-        letter-spacing: 0;
-        line-height: 50px;
-        font-size: 35px;
-    }
+#about .divider ~ p {
+    color: #555;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-top: 15px;
 }
