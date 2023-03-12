@@ -10,37 +10,47 @@
     <title>Personal Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo"><span>Jo</span>nes.</h1>
-        <nav class="navigation">
-            <ul>
-                <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="aboutme.html"><i class="fa-solid fa-user"></i> About Me</a>
-                <a href="services.html"><i class="fa-solid fa-server"></i> Services</a>
-                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-            </ul>
-        </nav>
-        <div class="footer">
-            <p>&copy; Copyright 2023 <br>Designed By <a href="https://github.com/jonessouzasilva" target="_blank">Jones Souza</a></p>
-        </div>
-    </header>
 
-    <section class="home">
-        <div class="content">
-            <h2>Olá, Me chamo <span>Jones Souza</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam possimus quo dolorum accusantium, voluptate mollitia odio a blanditiis id perferendis magnam modi, esse consequuntur inventore velit ratione. Quos, odit.</p>
-            <div class="btn-group">
-                <a href="https://wa.me/5511994129909" target="_blank">Whatsapp</a>
-                <a href="https://github.com/jonessouzasilva" target="_blank">Projects</a>
-            </div>
+    <header>
+        <div class="profile">
+            <img src="imagens/perfil.jpeg" alt="" width="150px">
+            <h1>Jones Souza</h1>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/jones-souza-a7a020141" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100089370699489" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/_jonessouza_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
-    </section>
 
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="sobremim.html"><i class="fa-solid fa-user"></i> About Me</a></li>
+                <li><a href="servicos.html"><i class="fa-solid fa-server"></i> Services</a></li>
+                <li><a href="contato.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <p>&copy; Copyright 2023 <br>Designed By <a href="https://github.com/jonessouzasilva" target="_blank">Jones Souza</a></p>
+        </div>
+
+    </header>
+
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+
+    <main>
+
+        <section id="home">
+            <div class="home-row">
+                <h1>Olá, Me chamo<br>Jones Souza<span>.</span></h1>
+                <p>Eu sou <span class="auto-input">Front-end</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit/fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
 </body>
 </html>
