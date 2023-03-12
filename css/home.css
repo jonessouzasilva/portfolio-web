@@ -8,14 +8,17 @@
 }
 
 header {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 80%;
-    padding: 5px 5px;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
-    z-index: 100;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+    z-index: 99;
 }
 
 .logo {
@@ -29,12 +32,12 @@ header {
 }
 
 header nav ul a {
-    display: cover;
+    display: inline-block;
     text-decoration: none;
     padding: 7px 10px;
     margin: 7px 0;
-    color: #555;
-    font-weight: 300;
+    color: lightgrey;
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.6px;
 }
@@ -46,11 +49,11 @@ header nav ul a i {
 }
 
 header nav ul a:hover i {
-    color: gray;
+    color: aqua;
 }
 
-header nav ul .active i {
-    color: gray;
+header nav ul a .active i {
+    color: aqua;
 }
 
 .navigation a {
@@ -76,6 +79,8 @@ header nav ul .active i {
     display: flex;
     align-items: center;
     padding: 30px 100px;
+    margin: 1.1px;
+    transition: 0.4s;
 }
 
 .content {
@@ -172,85 +177,66 @@ header .footer p a {
     color: #fff;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 786px) {
     header {
-        position: fixed;
-        top: 1px;
-        left: 50px;
-        width: 80%;
-        padding: 5px 5px;
-        display: flex;
-        justify-content: space-between;
-        z-index: 100;
+        left: 100px;
+        position: relative;
+        align-items: center;
     }
-    
+    header .footer {
+        width: 100%;
+    }
     .logo {
-        font-size: 2em;
-        color: #555;
-        cursor: default;
+        left: -80px;
+        position: center;
+        align-items: center;
     }
-    
-    .logo span {
-        color: peru;
+
+    .navigation {
+        width: 60%;
+        display: flex;
+        position: center;
+        align-items: center;
     }
-    
-    header nav ul a {
-        display: cover;
-        text-decoration: none;
-        padding: 7px 10px;
-        margin: 7px 0;
-        color: #555;
-        font-weight: 300;
-        font-size: 15px;
-        letter-spacing: 0.6px;
-    }
-    
-    header nav ul a i {
-        margin-right: 10px;
-        font-size: 20px;
-        transition: 0.4s;
-    }
-    
-    header nav ul a:hover i {
-        color: gray;
-    }
-    
-    header nav ul .active i {
-        color: gray;
-    }
-    
-    .navigation a {
-        font-size: 1.2em;
-        color: #555;
-        text-decoration: none;
-        margin-right: 40px;
-        font-weight: 500;
-        transition: .3s;
-    }
-    
-    .navigation a:hover {
-        color: peru;
-    }
-    
+
     .home {
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background: url('../imagens/perfil.jpeg') no-repeat;
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
-        padding: 30px 100px;
+        padding: 20px 20px;
+        margin: 2px;
+        transition: 0.4s;
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 90%;
     }
     
+    .social-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: peru;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid #fff;
+        outline: 2px solid peru;
+        transition: .4s;
+    }
     .content {
-        max-width:700px;
+        max-width:80%;
         color: #555;
     }
     
     .content h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
     
     .content h2 span {
@@ -258,14 +244,14 @@ header .footer p a {
     }
     
     .content h2 {
-        font-size: 2em;
+        font-size: 1em;
     }
     
     .content p {
-        padding: 10px 0 40px;
+        padding: 1px 0 5px;
     }
-    
     .btn-group a {
+        display: block;
         color: #fff;
         text-decoration: none;
         padding: 10px 40px;
@@ -291,50 +277,5 @@ header .footer p a {
     .btn-group a:hover:nth-child(2) {
         color: #555;
         background: peru;
-    }
-    
-    .social-icons {
-        position: absolute;
-        bottom: 50px;
-    }
-    
-    .social-icons a {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        background: peru;
-        border-radius: 50%;
-        margin-right: 22px;
-        text-align: center;
-        line-height: 35px;
-        border: 1px solid #fff;
-        outline: 2px solid peru;
-        transition: .4s;
-    }
-    
-    .social-icons a:hover {
-        background-color: gray;
-    }
-    
-    .social-icons a i {
-        color: #fff;
-    }
-    
-    header .footer {
-        text-align: center;
-        background-color: #555;
-        width: 100%;
-        color: peru;
-        font-size: 14px;
-        letter-spacing: 0.6px;
-        padding: 1px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        transition: 0.4s;
-    }
-    
-    header .footer p a {
-        color: #fff;
     }
 }
