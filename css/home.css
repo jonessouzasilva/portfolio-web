@@ -84,20 +84,7 @@ header nav ul li .active i{
 color: var(--themeColor);
 }
 header .footer{
-    text-align: center;
-    background-color: var(--sideBGColor);
-    width: 300px;
-    color: lightgray;
-    font-size: 14px;
-    letter-spacing: 0.6px;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transition: 0.4s;
-}
-header .footer p a{
-    color: var(--themeColor);
+    
 }
 #MenuBtn{
     position: fixed;
