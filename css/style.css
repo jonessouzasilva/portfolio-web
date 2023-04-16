@@ -434,3 +434,17 @@ color: var(--themeColor);
     line-height: 46px;
     transition: 0.4s;
 }
+#portfolio .port-row .port-item .port-info a:hover{
+    background-color: var(--sideBGColor);
+    color: var(--bgColor);
+}
+
+@media only screen and (max-width: 650px){
+    #portfolio{
+        padding: 50px 10px;
+    }
+    #portfolio .port-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
